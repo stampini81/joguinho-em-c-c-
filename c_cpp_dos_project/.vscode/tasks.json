@@ -8,7 +8,7 @@
       "command": "cmd",
       "args": [
         "/c",
-        "if not exist bin mkdir bin && g++ main.cpp libmath.c -std=c++17 -O2 -o bin\\program.exe"
+        "if not exist bin mkdir bin && C:\\msys64\\mingw64\\bin\\g++.exe main.cpp libmath.c -std=c++17 -O2 -o bin\\program.exe"
       ],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": ["$gcc"],
@@ -27,7 +27,7 @@
       "command": "cmd",
       "args": [
         "/c",
-        "if not exist bin mkdir bin && g++ api_client.cpp -std=c++17 -O2 -I third_party\\include -o bin\\api_client.exe"
+        "if not exist bin mkdir bin && C:\\msys64\\mingw64\\bin\\g++.exe api_client.cpp -std=c++17 -O2 -I third_party\\include -o bin\\api_client.exe"
       ],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": ["$gcc"]
