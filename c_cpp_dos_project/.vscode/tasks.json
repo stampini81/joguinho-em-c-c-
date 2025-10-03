@@ -1,0 +1,36 @@
+{
+  // VS Code tasks for building/running with MinGW or MSYS2 g++ on Windows
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build: main + libmath",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "if not exist bin mkdir bin && g++ main.cpp libmath.c -std=c++17 -O2 -o bin\\program.exe"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Run: program",
+      "type": "shell",
+      "command": "cmd",
+      "args": ["/c", "bin\\program.exe"],
+      "options": { "cwd": "${workspaceFolder}" }
+    },
+    {
+      "label": "Build: api_client (needs headers)",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "if not exist bin mkdir bin && g++ api_client.cpp -std=c++17 -O2 -I third_party\\include -o bin\\api_client.exe"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

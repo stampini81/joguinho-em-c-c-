@@ -1,0 +1,26 @@
+## Build artifacts
+bin/
+build/
+*.exe
+*.obj
+*.o
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.out
+*.so
+*.a
+
+## VS Code
+.vscode/ipch/
+.vscode/.browse.VC.db*
+
+## OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+
+## Third-party headers (optional)
+third_party/
