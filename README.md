@@ -4,7 +4,8 @@
 
 ## 📁 Estrutura do Projeto- `graphics.cpp`: Exemplo de manipulação gráfica em Modo 13h (DOS)
 
-```- `api_client.cpp`: Exemplo de consumo de API REST em C++ moderno
+```
+- `api_client.cpp`: Exemplo de consumo de API REST em C++ moderno
 
 c_cpp_dos_project/- `libmath.c` e `libmath.h`: Exemplo de biblioteca compartilhada em C
 
@@ -34,7 +35,8 @@ c_cpp_dos_project/- `libmath.c` e `libmath.h`: Exemplo de biblioteca compartilha
 
 └── build_and_run.bat    # ✅ Script automatizado  - "Build: api_client (needs headers)" para compilar o cliente REST
 
-```- Para rodar: execute a task "Run: program" ou, no terminal integrado, `bin\\program.exe`
+```
+- Para rodar: execute a task "Run: program" ou, no terminal integrado, `bin\\program.exe`
 
 
 
@@ -199,4 +201,5 @@ graphics.exe
 - Compilador instalado e funcionando
 - Exemplo principal executando perfeitamente
 - Ambiente de desenvolvimento completo
+
 - Pronto para desenvolvimento C/C++
